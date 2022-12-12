@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class HeapSort {    
     // public static void main(String args[]) {
     //     int[] myArray = new int[] { 1, 5, 8, 9, 6, 12, 54, 78, 3, 15, 66, 5 };
-    //     heapSort(myArray, myArray.length);
+    //     sort(myArray);
     // }
 
     public static void sort(int[] myArray) {
@@ -17,7 +17,7 @@ public class HeapSort {
         for (int i = (length / 2); i >= 0; i--) {
             heapify(myArray, i, size);
         }
-        ;
+
         for (int i = size; i >= 0; i--) {
             temp = myArray[0];
             myArray[0] = myArray[size];
@@ -25,7 +25,7 @@ public class HeapSort {
             size--;
             heapify(myArray, 0, size);
         }
-        System.out.println(Arrays.toString(myArray));
+        // System.out.println(Arrays.toString(myArray));
     }
 
     public static void heapify(int[] myArray, int i, int heapSize) {

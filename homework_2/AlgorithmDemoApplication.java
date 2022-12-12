@@ -20,11 +20,11 @@ public class AlgorithmDemoApplication {
             }
             
             startDate = new Date();
-            QuickSort.sort(array);
+            MergeSort.sort(array, 0, array.length-1);
             endDate = new Date();
-            long quickSortDuration = endDate.getTime() - startDate.getTime();
+            long mergeSortDuration = endDate.getTime() - startDate.getTime();
 
-            System.out.printf("i: %s, heap sort duration: %s, quick sort duration: %s%n", i, heapSortDuration, quickSortDuration);
+            System.out.printf("i: %s, heap sort duration: %s, merge sort duration: %s%n", i, heapSortDuration, mergeSortDuration);
         }
     }
 }
